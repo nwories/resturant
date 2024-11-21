@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary's kitchen and Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- ___NAV BAR___ -->
+    <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
+        <div class="container">
+          <div class="d-flex">
+            <a class="navbar-brand" href="#">
+              <img width="15%" src="./assets/logo/logomk.png" class="" alt="Mary's Kitchen Logo">
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active a" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link a" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="nav-link dropdown-toggle a" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item a" type="button">Main Course</a></li>
+                    <li><a class="dropdown-item a" type="button">Appetizer</a></li>
+                    <li><a class="dropdown-item a" type="button">Desert</a></li>
+                    <li><a class="dropdown-item a" type="button">Drinks</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link a" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link a" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link a" href="#reservation">Reservation</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link a" href="#blog">Blog</a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-order">Order Online</a>
+          </div>
+        </div>
+      </nav>
+    
+      <!-- SLIDER SECTION -->
+       <section>
+        <div class="container-fluid">
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/mk0.jpg" class="d-block w-100 carosel-img" alt="carosel-img">
+                <div class="carousel-caption top-0 mt-5 d-md-block w-50 mx-auto">
+                  <h5 class="h-tag mt-5 pt-5 fs-1 text-white-50">___Welcome to Mary's Kitchen___</h5>
+                  <h1 class="text-uppercase fw-bold h-one">fresh & tasty food</h1>
+                  <a class="btn btn-order mt-5">Reservation</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/mk9.jpg" class="d-block w-100 carosel-img" alt="carosel-img">
+                <div class="carousel-caption top-0 mt-5 d-md-block w-50 mx-auto">
+                  <h5 class="h-tag mt-5 pt-5 fs-1 text-white-50">___Welcome to Mary's Kitchen___</h5>
+                  <h1 class="text-uppercase fw-bold h-one">taste sweet & yummy</h1>>
+                  <a class="btn btn-order mt-5">Reservation</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/mkd0.jpg" class="d-block w-100 carosel-img" alt="carosel-img">
+                <div class="carousel-caption top-0 mt-5 d-md-block w-50 mx-auto">
+                  <h5 class="h-tag mt-5 pt-5 fs-1 text-white-50">___Welcome to Mary's Kitchen___</h5>
+                  <h1 class="text-uppercase fw-bold h-one">grilled, chilled & flavored</h1>
+                  <a class="btn btn-order mt-5">Reservation</a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+       </section>
+
+       <!-- ABOUT SECTION -->
+        <section class="min-vh-100 py-5">
+          <div class="container my-5 d-flex">
+            <div class="row gap-5 justify-content-center">
+              <div class="col-5">
+                <img src="./assets/img/about3.jpg" class="img-fluid img-hover w-75 ms-5 img-thumbnail d-none d-md-block" alt="image of the owner">
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="text-center">
+                  <h5 class="h-tag fs-1 text-capitalize text-dark">about us</h5>
+                 <div class="divider mx-auto"></div>
+                  <p class="fs-5 mt-4">Indulge in a culinary journey of flavors, where every dish tells a story of passion and taste at <span>Mary's Kitchen.</span>.</p>
+                  <p class="fs-5 mt-4">At <span>Mary's Event planning</span>, we're passionate about crafting unforgettable events that exceed your expectations. Our team of expert event planners combines creativity, attention to detail, and meticulous planning to deliver exceptional experiences.</p>
+                  <a href="#about" class="btn btn-order my-3">Explore Our Menu</a>
+                </div>
+              </div>
+              <div class="col-9 col-md-5">
+                <img src="./assets/img/event.jpg" class="img-fluid img-hover w-75 rotate-img ms-5 my-3 img-thumbnail" alt="image of the owner">
+              </div>
+              <div class="col-12 col-md-5 text-center">
+                <img src="./assets/img/about0.jpg" class="img-fluid img-hover w-75 img-thumbnail" alt="image of the owner">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MENU SECTION -->
+         <section class="min-vh-100 py-5 menu bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="h-tag fs-1 mt-5 text-capitalize text-white text-center">exolore our menu</h1>
+                <div class="divider mx-auto w-50"></div>
+                <p class="fs-5 mt-4 text-white text-center mx-auto w-75">we craft unforgettable dining experiences for any occasion. Our expert chefs and dedicated team deliver delicious, visually stunning cuisine that exceeds your expectations. <span>Let's Create Unforgettable Memories Together</span>!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-5">
+            <ul class="nav nav-pills mb-3 justify-content-center col-8 col-md-12 mx-auto sticky-top" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn-menu active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn-menu" id="pills-main-dish-tab" data-bs-toggle="pill" data-bs-target="#pills-main-dish" type="button" role="tab" aria-controls="pills-main-dish" aria-selected="true">Main Courses</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn-menu" id="pills-appetizer-tab" data-bs-toggle="pill" data-bs-target="#pills-appetizer" type="button" role="tab" aria-controls="pills-appetizer" aria-selected="true">Appetizer</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn-menu" id="pills-desert-tab" data-bs-toggle="pill" data-bs-target="#pills-desert" type="button" role="tab" aria-controls="pills-desert" aria-selected="true">Desert</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn-menu" id="pills-drink-tab" data-bs-toggle="pill" data-bs-target="#pills-drink" type="button" role="tab" aria-controls="pills-drink" aria-selected="true">Drink</button>
+              </li>
+              
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+                <h4>All Dishes</h4>
+                <!-- ALL -->
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/okro.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Okro Soup</h5>
+                        <p class="card-text">#20,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/vegetable-soup1.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Vegetable Soup</h5>
+                        <p class="card-text">#17,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/egusi.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Egusi Soup</h5>
+                        <p class="card-text">#25,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/bitter.webp" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Afang Soup</h5>
+                        <p class="card-text">#17,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/ogbono.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Ogbono Soup</h5>
+                        <p class="card-text">#22,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/yamporidge.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Yam Porridge</h5>
+                        <p class="card-text">#6,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/jollofr.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Jollof Rice</h5>
+                        <p class="card-text">#9,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/fr.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Veg Fried Rice</h5>
+                        <p class="card-text">#9,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/beans.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Beans</h5>
+                        <p class="card-text">#4,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/plantains.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Plantain</h5>
+                        <p class="card-text">#8,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/plantfritata.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Plantain Fritata</h5>
+                        <p class="card-text">#4,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/pizza.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Pizza</h5>
+                        <p class="card-text">#6,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/shawarmachicken.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Chicken Shawarma</h5>
+                        <p class="card-text">#4,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/shawarmabeef.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Beaf Shawarma</h5>
+                        <p class="card-text">#5,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/pie.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Pie</h5>
+                        <p class="card-text">#1,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/hotdog.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Hot dog</h5>
+                        <p class="card-text">#2,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/springroll.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Spring Roll</h5>
+                        <p class="card-text">#2,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/samosa.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Samosa</h5>
+                        <p class="card-text">#3,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/kebab.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Kebab</h5>
+                        <p class="card-text">#4,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/musseltomato.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Mussel In Tomatoes</h5>
+                        <p class="card-text">#5,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/lava.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Chocolate Lava Cake</h5>
+                        <p class="card-text">#8,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/nkwobi.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Nkwobi</h5>
+                        <p class="card-text">#7,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/ugba.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Ugba</h5>
+                        <p class="card-text">#4,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/abacha.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Abacha</h5>
+                        <p class="card-text">#2,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/fio.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Fio Fio and Achicha</h5>
+                        <p class="card-text">#4,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/cat.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Fish</h5>
+                        <p class="card-text">#9,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/meat5.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Meat</h5>
+                        <p class="card-text">#8,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show" id="pills-main-dish" role="tabpanel" aria-labelledby="pills-main-dish-tab" tabindex="0">
+                <h4>Main Course Dishes</h4>
+                <!-- CARD -->
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/okro.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Okro Soup</h5>
+                        <p class="card-text">#20,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/vegetable-soup1.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Vegetable Soup</h5>
+                        <p class="card-text">#17,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/egusi.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Egusi Soup</h5>
+                        <p class="card-text">#25,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/bitter.webp" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Afang Soup</h5>
+                        <p class="card-text">#17,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/ogbono.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Ogbono Soup</h5>
+                        <p class="card-text">#22,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/yamporidge.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Yam Porridge</h5>
+                        <p class="card-text">#6,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/jollofr.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Jollof Rice</h5>
+                        <p class="card-text">#9,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/fr.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Veg Fried Rice</h5>
+                        <p class="card-text">#9,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/beans.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Beans</h5>
+                        <p class="card-text">#4,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/plantains.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Plantain</h5>
+                        <p class="card-text">#8,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show" id="pills-appetizer" role="tabpanel" aria-labelledby="pills-appetizer-tab" tabindex="0">
+                <h4>Appetizer Dishes</h4>
+                <!-- APPETIZER -->
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/plantfritata.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Plantain Fritata</h5>
+                        <p class="card-text">#4,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/pizza.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Pizza</h5>
+                        <p class="card-text">#6,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/shawarmachicken.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Chicken Shawarma</h5>
+                        <p class="card-text">#4,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/shawarmabeef.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Beaf Shawarma</h5>
+                        <p class="card-text">#5,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/pie.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Pie</h5>
+                        <p class="card-text">#1,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/hotdog.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Hot dog</h5>
+                        <p class="card-text">#2,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/springroll.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Spring Roll</h5>
+                        <p class="card-text">#2,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/samosa.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Samosa</h5>
+                        <p class="card-text">#3,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/kebab.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Kebab</h5>
+                        <p class="card-text">#4,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div> 
+              </div> 
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show" id="pills-desert" role="tabpanel" aria-labelledby="pills-desert-tab" tabindex="0">
+                <h4>Desert Dishes</h4>
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/musseltomato.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Mussel In Tomatoes</h5>
+                        <p class="card-text">#5,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/lava.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Chocolate Lava Cake</h5>
+                        <p class="card-text">#8,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/nkwobi.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Nkwobi</h5>
+                        <p class="card-text">#7,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/ugba.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Ugba</h5>
+                        <p class="card-text">#4,000</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/abacha.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Abacha</h5>
+                        <p class="card-text">#2,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/fio.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Fio Fio and Achicha</h5>
+                        <p class="card-text">#4,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/cat.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Fish</h5>
+                        <p class="card-text">#9,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/meat5.jpg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Meat</h5>
+                        <p class="card-text">#8,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show" id="pills-drink" role="tabpanel" aria-labelledby="pills-drink-tab" tabindex="0">
+                <h4>Drinks</h4>
+                <!-- DRINKS -->
+                 <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="card my-2 mx-2 col-12 col-md-2">
+                      <img src="./assets/img/chapmancock.jpeg" style="height: 18.8rem;" class="pt-2 card-img-top" alt="Vegetable Soup">
+                      <div class="card-body">
+                        <h5 class="card-title h-tag text-dark">Chapman Cock Tail</h5>
+                        <p class="card-text">#3,500</p>
+                        <a href="#" class="btn btn-order">Order Now</a>
+                      </div>
+                    </div>
+
+                  </div>
+                 </div>
+              </div> 
+            </div>
+          </div>
+         </section>
+</body>
+</html>

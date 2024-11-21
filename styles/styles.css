@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
+body{
+    font-family: 'Spline Sans', sans-serif;
+    color: #777;
+    line-height: 1.7;
+}
+
+.h-tag, .h-one{
+    font-weight: 600;
+    color: #fff;
+}
+
+.h-one{
+    font-size: 5rem;
+}
+
+.a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+
+.a:hover{
+    color: #eeb911;
+    transform: scale(1.2);
+}
+
+.btn{
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-order{
+    color: #fff;
+    font-weight: 500;
+    background-color: #eeb911;
+    border-color: #eeb911;
+}
+
+.btn-order:hover{
+    background-color: #212529;
+    border-color: #212529;
+    color: #fff;
+}
+
+.carosel-img{
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(.7);
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 40px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: auto;
+}
+
+.divider{
+    width: 55%;
+    height: 2px;
+    background-color: #eeb911;
+}
+
+span{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.rotate-img{
+   transform: scale(1.37); 
+}
+
+.img-hover:hover{
+    transform: scale(0.8);
+    transition: 0.5s;
+    border: #eeb911 3px solid;
+    border-radius: 0 15px 0 15px;
+}
+
+.nav-pills .nav-link{
+    color: #fff;
+    font-weight: 500;
+    background-color: #eeb911;
+    margin: 8px;
+    border-radius: 20px;
+}
+
+.btn-menu:hover{
+    color: #fff;
+    background-color: #212529;
+}
+
+.nav-pills .btn-menu.active{
+    background-color: #fff;
+    color: #212529;
+    font-weight: 600;
+    transform: scale(1.3);
+    transition: 0.9s;
+}
